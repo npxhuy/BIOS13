@@ -24,7 +24,7 @@ LV_sys <- function(t, np, Parameters) {
   return(list(c(dndt, dpdt ))) # the result as a vector in a list
 }
 library(deSolve)
-np0 = c(1.5,0.5)
+np0 = c(2,4)
 timevec = seq(0,20,by=0.1)
 P = c(1,1,2)
 out <- ode( y = np0, func = LV_sys, times = timevec, parms = P)
