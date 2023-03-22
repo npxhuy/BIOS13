@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\renewcommand\thesection{\alph{section}}
+\title{BIOS13 - Question 1}
+\author{Pham Xuan Huy Nguyen}
+
+\begin{document}
+
+\maketitle
+
+\section{Construction of a binary genetic algorithm}
+1. Represent your problem as genes in a binary value
+chromosome.\\
+2. Random generation of a ”population” of chromosomes\\
+3. Evaluate ”fitness” (how good is a chromosome as solution) of individual chromosomes\\
+4. Sort solutions after evaluating.\\
+5. Pairing, recombination and thus producing new offspring.\\
+The process of pairing and recombination evolving elitistic pairing and random cut, for example: two highest ranking individual will undergo that process to produce high quality offspring. Next, the individual 3 and 4, and so on. \\
+6. Insert offspring in population, discard worst solutions.\\
+The previous offsprings that were made in 5 is inserted in the population, the low ranked individuals will be discarded to maintain the same number of chromosomes.\\
+7. Mutation.\\
+Introducing mutation to the whole population, except the individuals that stay at the top of the ranking (having high fitness).\\
+8. Cycle until termination.\\
+Step 3 to 7 will be repeated until having the best possible solution.
+
+\section{Why does a single layer perceptron need a bias?}
+
+Bias acts as an adjustable model parameter, which was added to a perceptron's weighted sum of inputs and weights, to make the model’s performance on training data, or fit the given data as good as possible, thus increasing the model accuracy.
+\end{document}
